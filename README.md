@@ -20,3 +20,16 @@ followed by:
 from example import example as ex
 ex.example()
 ```
+
+
+## Bitbucket
+When the module is stored as .repo/tools/example+/example/example.py, where the setup.py is in the "+" folder:
+```
+pip install -e "git+https://user@bitbucket-repo/scm/tools/temp.git#egg=example&subdirectory=tools/example"
+```
+
+followed by:
+```
+from example import example as ex
+ex.example()
+```
